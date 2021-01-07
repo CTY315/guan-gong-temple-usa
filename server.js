@@ -18,14 +18,14 @@ app.get("/", (req, res) => {
 //get the form data
 app.post("/donate", async (req, res) => {
   const { amount, email } = req.body;
-
+  console.log(email, "in express server");
   try {
     const paymentIntent = await Stripe.paymentIntents.create({
       amount,
       currency: "usd",
       receipt_email: email,
     });
-    console.log(email, "in express server");
+
     // console.log(paymentIntent);
     res.status(200).send(paymentIntent.client_secret);
   } catch (err) {
