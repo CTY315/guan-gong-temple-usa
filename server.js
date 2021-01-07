@@ -25,6 +25,7 @@ app.post("/donate", async (req, res) => {
       currency: "usd",
       receipt_email: email,
     });
+    console.log(email, "in express server");
     // console.log(paymentIntent);
     res.status(200).send(paymentIntent.client_secret);
   } catch (err) {
