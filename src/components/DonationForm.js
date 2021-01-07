@@ -21,8 +21,7 @@ function DonationForm() {
     console.log("elements:", elements);
     try {
       const paymentIntent = await axios.post(
-        // "https://ggt-donation.heroku.com/donate" ||
-        "http://localhost:5000/donate",
+        "https://ggt-donation.heroku.com/donate",
         {
           amount: amount * 100,
           email: email,
