@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const path = require("path");
 
 //this is a secret key, please use .gitignore
 const Stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
@@ -12,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("hello express is working");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 //get the form data
