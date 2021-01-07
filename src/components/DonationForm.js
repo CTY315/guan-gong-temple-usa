@@ -20,10 +20,13 @@ function DonationForm() {
     setIsProcessing(true);
     console.log("elements:", elements);
     try {
-      const paymentIntent = await axios.post("http://localhost:5000/donate", {
-        amount: amount * 100,
-        email: email,
-      });
+      const paymentIntent = await axios.post(
+        "http://ggt-donation.heroku.com/donate",
+        {
+          amount: amount * 100,
+          email: email,
+        }
+      );
       //paymentIntent.data is client secret
       console.log("paymentIntent:", paymentIntent);
 
