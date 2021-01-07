@@ -24,12 +24,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"nodemon server.js\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "testing": "nodemon server.js",
-    "dev": "concurrently \"nodemon server.js\" \"npm run start\" "
+    "testing": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [

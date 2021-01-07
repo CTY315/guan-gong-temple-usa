@@ -21,7 +21,8 @@ function DonationForm() {
     console.log("elements:", elements);
     try {
       const paymentIntent = await axios.post(
-        "https://ggt-donation.heroku.com/donate",
+        // "https://ggt-donation.heroku.com/donate" ||
+        "http://localhost:5000/donate",
         {
           amount: amount * 100,
           email: email,
@@ -64,6 +65,7 @@ function DonationForm() {
         setEmail("");
         setAmount("");
         cardElement.clear();
+        console.log("successfull donate");
       }
 
       //confirm payment method,then we can go check dash board
@@ -100,7 +102,7 @@ function DonationForm() {
             placeholder="Phone Number"
             value={phone}
           />
-          <small>Format: 123-456-7890</small>
+          <small>Format: 1234567890</small>
         </Form.Group>
 
         <Form.Group style={{ textAlign: "start" }}>
