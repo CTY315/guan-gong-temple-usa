@@ -20,6 +20,7 @@ function DonationForm() {
     setIsProcessing(true);
     console.log("elements:", elements);
     try {
+      console.log("before axios.post");
       const paymentIntent = await axios.post(
         "https://ggt-donation.heroku.com/donate",
         {
