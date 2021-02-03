@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Pics from "./components/Pics";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FrontPage from "./components/FrontPage";
-import DonationForm from "./components/DonationForm";
 import AboutUs from "./components/AboutUs";
 
 function App() {

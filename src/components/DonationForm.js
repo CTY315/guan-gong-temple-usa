@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import axios from "axios";
 
@@ -22,7 +21,7 @@ function DonationForm() {
     try {
       // console.log("before axios.post");
       const paymentIntent = await axios.post(
-        "https://ggt-donation.heroku.com/donate",
+        "/donate",
         // "http://localhost:5000/donate",
         {
           amount: amount * 100,
