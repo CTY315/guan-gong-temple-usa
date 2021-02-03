@@ -18,18 +18,19 @@ function DonationForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     setIsProcessing(true);
-    console.log("elements:", elements);
+    // console.log("elements:", elements);
     try {
-      console.log("before axios.post");
+      // console.log("before axios.post");
       const paymentIntent = await axios.post(
         "https://ggt-donation.heroku.com/donate",
+        // "http://localhost:5000/donate",
         {
           amount: amount * 100,
           email: email,
         }
       );
       //paymentIntent.data is client secret
-      console.log("paymentIntent:", paymentIntent);
+      // console.log("paymentIntent:", paymentIntent);
 
       if (!stripe || !elements) {
         // Stripe.js has not loaded yet. Make sure to disable
@@ -58,14 +59,15 @@ function DonationForm() {
         setIsProcessing(false);
         window.alert("Error: Please enter credit card detail");
       } else {
-        console.log("[PaymentMethod]", paymentMethod);
+        // console.log("[PaymentMethod]", paymentMethod);
         setIsProcessing(false);
         setName("");
         setPhone("");
         setEmail("");
         setAmount("");
         cardElement.clear();
-        console.log("successfull donate");
+        // console.log("successfull donate");
+        alert("Successful!Thank you.");
       }
 
       //confirm payment method,then we can go check dash board

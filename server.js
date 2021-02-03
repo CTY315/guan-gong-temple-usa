@@ -1,22 +1,28 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const path = require("path");
 
 //this is a secret key, please use .gitignore
-const Stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
+let Stripe;
+if (process.env.NODE_ENV === "production") {
+  Stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+} else {
+  Stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
+}
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 //for cors error
 const cors = require("cors");
 app.use(cors());
 
 app.use(express.json());
-// app.use(express.static(path.join(__dirname, "public")));
-
-app.get("*", (req, res) => {
-  res.send("hello");
-  // res.sendFile(path.join(__dirname, "public", "index.html"));
-});
 
 //get the form data
 app.post("/donate", async (req, res) => {
