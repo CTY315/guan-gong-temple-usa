@@ -12,24 +12,12 @@ class AboutUs extends Component {
           />
         </div>
         <div style={{ padding: "50px 10% 50px 10%" }}>
-          <h1>Our Story</h1>
+          <h1>Biography of Guan Gong </h1>
           <br />
           <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Elementum tempus egestas sed sed risus. Velit euismod in
-            pellentesque massa placerat duis ultricies lacus. Id leo in vitae
-            turpis massa sed elementum tempus. Ultrices eros in cursus turpis.
-            Sed blandit libero volutpat sed cras ornare arcu dui. Tellus
-            pellentesque eu tincidunt tortor aliquam nulla facilisi. Quam
-            viverra orci sagittis eu volutpat odio facilisis. Vel pharetra vel
-            turpis nunc. Odio morbi quis commodo odio aenean. Massa placerat
-            duis ultricies lacus sed turpis tincidunt. Pellentesque dignissim
-            enim sit amet venenatis urna. Tortor vitae purus faucibus ornare
-            suspendisse sed. Nunc mi ipsum faucibus vitae aliquet nec
-            ullamcorper sit amet. Pharetra sit amet aliquam id diam maecenas.
-            Euismod lacinia at quis risus sed vulputate. Odio ut enim blandit
-            volutpat maecenas volutpat blandit.
+            Guan Gong IA D - A. a 2191. also known as Lord Gum• was mimed Yu.
+            styled CI wig •hr whi. sods later :hanged to Inc.,. mid .15 A
+            11.110ie 01. sloth, Province
           </h5>
           <br />
           <h5>

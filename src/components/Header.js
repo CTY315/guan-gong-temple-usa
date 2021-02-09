@@ -10,8 +10,8 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/pics">Pictures</Nav.Link>
-              <Nav.Link href="/donation">Donation</Nav.Link>
+              <Nav.Link href="/pics">Pictures 照片</Nav.Link>
+              <Nav.Link href="/donation">Donation 捐款</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

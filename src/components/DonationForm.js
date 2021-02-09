@@ -86,7 +86,7 @@ function DonationForm() {
     <div style={{ margin: "auto", width: "80%" }}>
       <Form onSubmit={handleSubmit} action="POST">
         <Form.Group style={{ textAlign: "start" }}>
-          <Form.Label>Your Name</Form.Label>
+          <Form.Label>Your Name 名字</Form.Label>
           <Form.Control
             onChange={(e) => setName(e.target.value)}
             name="name"
@@ -96,7 +96,7 @@ function DonationForm() {
           />
         </Form.Group>
         <Form.Group style={{ textAlign: "start" }}>
-          <Form.Label>Your Phone number</Form.Label>
+          <Form.Label>Your Phone number 電話</Form.Label>
           <Form.Control
             onChange={(e) => setPhone(e.target.value)}
             name="phone"
@@ -108,7 +108,7 @@ function DonationForm() {
         </Form.Group>
 
         <Form.Group style={{ textAlign: "start" }}>
-          <Form.Label>Your Email</Form.Label>
+          <Form.Label>Your Email 電郵</Form.Label>
           <Form.Control
             onChange={(e) => setEmail(e.target.value)}
             name="email"
@@ -119,7 +119,7 @@ function DonationForm() {
         </Form.Group>
 
         <Form.Group style={{ textAlign: "start" }}>
-          <Form.Label>Donation Amount (USD)</Form.Label>
+          <Form.Label>Donation Amount 捐款數目 (USD)</Form.Label>
           <Form.Control
             onChange={(e) => setAmount(e.target.value)}
             name="amount"
@@ -130,7 +130,7 @@ function DonationForm() {
         </Form.Group>
 
         <Form.Group style={{ textAlign: "start" }}>
-          <Form.Label>Your credit card detail</Form.Label>
+          <Form.Label>Your credit card detail 信用卡資料</Form.Label>
           <fieldset className="FormGroup">
             <div
               className="FormRow"
@@ -150,7 +150,7 @@ function DonationForm() {
                     base: {
                       iconColor: "#c4f0ff",
                       color: "black",
-                      fontWeight: 600,
+                      fontWeight: 500,
                       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
                       fontSize: "16px",
                       fontSmoothing: "antialiased",
