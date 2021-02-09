@@ -83,7 +83,7 @@ function DonationForm() {
   }
 
   return (
-    <div style={{ margin: "auto", width: "80%" }}>
+    <div style={{ margin: "auto", width: "85%" }}>
       <Form onSubmit={handleSubmit} action="POST">
         <Form.Group style={{ textAlign: "start" }}>
           <Form.Label>Your Name 名字</Form.Label>
