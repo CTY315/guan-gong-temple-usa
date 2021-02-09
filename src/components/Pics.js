@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import picTwo from "../images/IMG_9612.JPG";
+import picThree from "../images/IMG_9613.JPG";
+import picFour from "../images/IMG_9614.JPG";
+import picFive from "../images/IMG_9615.JPG";
+import picSix from "../images/IMG_9616.JPG";
+import picSeven from "../images/IMG_9617.JPG";
 
 class Pics extends Component {
   render() {
@@ -15,21 +21,35 @@ class Pics extends Component {
                 />
               </Card>
             </Col>
-            <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="https://s3-media0.fl.yelpcdn.com/bphoto/MWdXUWaGj6hu39pZPUKQ9Q/o.jpg"
-                />
-              </Card>
-            </Col>
 
             <Col style={{ padding: "20px" }}>
               <Card style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="https://static.wixstatic.com/media/4fb642_7c69f1f880a54a0b8df87908e8042f68~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_784,h_523,al_c,q_90,usm_0.66_1.00_0.01/4fb642_7c69f1f880a54a0b8df87908e8042f68~mv2_d_5472_3648_s_4_2.webp"
-                />
+                <Card.Img variant="top" src={picTwo} />
+              </Card>
+            </Col>
+            <Col style={{ padding: "20px" }}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={picThree} />
+              </Card>
+            </Col>
+            <Col style={{ padding: "20px" }}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={picFour} />
+              </Card>
+            </Col>
+            <Col style={{ padding: "20px" }}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={picFive} />
+              </Card>
+            </Col>
+            <Col style={{ padding: "20px" }}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={picSix} />
+              </Card>
+            </Col>
+            <Col style={{ padding: "20px" }}>
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={picSeven} />
               </Card>
             </Col>
           </Row>
