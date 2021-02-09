@@ -21,8 +21,8 @@ function DonationForm() {
     try {
       // console.log("before axios.post");
       const paymentIntent = await axios.post(
-        // "/donate",
-        "http://localhost:5000/donate",
+        "/donate",
+        // "http://localhost:5000/donate",
         {
           amount: amount * 100,
           email: email,
