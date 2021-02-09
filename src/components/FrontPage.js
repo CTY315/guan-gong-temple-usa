@@ -2,7 +2,6 @@ import DonationForm from "./DonationForm";
 import { Container } from "react-bootstrap";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import { BrowserRouter } from "react-router-dom";
 
 const stripePromise = loadStripe("pk_live_JhFlMlppCNlx0AwEBHd0T7O9006HXsnDDu");
 //show different methods that we can use for stripePromise

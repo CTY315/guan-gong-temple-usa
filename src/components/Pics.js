@@ -6,6 +6,7 @@ import picFour from "../images/IMG_9614.JPG";
 import picFive from "../images/IMG_9615.JPG";
 import picSix from "../images/IMG_9616.JPG";
 import picSeven from "../images/IMG_9617.JPG";
+import "../pics.css";
 
 class Pics extends Component {
   render() {
@@ -14,7 +15,7 @@ class Pics extends Component {
         <Container>
           <Row>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img
                   variant="top"
                   src="https://fastly.4sqi.net/img/general/600x600/79385836_AUfP-aCmUvZuAOZB7b8Sdifx_BA5nXk67eex-TQheXM.jpg"
@@ -23,32 +24,32 @@ class Pics extends Component {
             </Col>
 
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img variant="top" src={picTwo} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "18rem" }} className="pic">
                 <Card.Img variant="top" src={picThree} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img variant="top" src={picFour} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img variant="top" src={picFive} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img variant="top" src={picSix} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card style={{ width: "20rem" }} className="pic">
                 <Card.Img variant="top" src={picSeven} />
               </Card>
             </Col>
