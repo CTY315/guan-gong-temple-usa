@@ -83,7 +83,7 @@ function DonationForm() {
   }
 
   return (
-    <div style={{ margin: "auto", width: "60%" }}>
+    <div style={{ margin: "auto", width: "80%" }}>
       <Form onSubmit={handleSubmit} action="POST">
         <Form.Group style={{ textAlign: "start" }}>
           <Form.Label>Your Name 名字</Form.Label>
@@ -150,7 +150,7 @@ function DonationForm() {
                     base: {
                       iconColor: "#c4f0ff",
                       color: "black",
-                      fontWeight: 500,
+                      fontWeight: 600,
                       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
                       fontSize: "16px",
                       fontSmoothing: "antialiased",
