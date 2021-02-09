@@ -4,13 +4,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
 //change to test.live key for different stage
-let stripePromise;
-if (process.env.NODE_ENV === "production") {
-  stripePromise = loadStripe("pk_live_JhFlMlppCNlx0AwEBHd0T7O9006HXsnDDu");
-} else {
-  stripePromise = loadStripe("pk_test_mmacZin7tVuUu56i31qV6g7q00vRNM02Cb");
-}
-
+const stripePromise = loadStripe("pk_live_JhFlMlppCNlx0AwEBHd0T7O9006HXsnDDu");
 //show different methods that we can use for stripePromise
 
 function FrontPage() {
