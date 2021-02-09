@@ -21,15 +21,15 @@ function DonationForm() {
     try {
       // console.log("before axios.post");
       const paymentIntent = await axios.post(
-        "/donate",
-        // "http://localhost:5000/donate",
+        // "/donate",
+        "http://localhost:5000/donate",
         {
           amount: amount * 100,
           email: email,
         }
       );
       //paymentIntent.data is client secret
-      // console.log("paymentIntent:", paymentIntent);
+      //console.log("paymentIntent:", paymentIntent);
 
       if (!stripe || !elements) {
         // Stripe.js has not loaded yet. Make sure to disable
@@ -54,9 +54,9 @@ function DonationForm() {
       });
 
       if (error) {
-        console.log("[error]", error);
+        // console.log("[error]", error);
         setIsProcessing(false);
-        window.alert("Error: Please enter credit card detail");
+        window.alert("Error:" + error.message);
       } else {
         // console.log("[PaymentMethod]", paymentMethod);
         setIsProcessing(false);
@@ -77,8 +77,9 @@ function DonationForm() {
         }
       );
     } catch (err) {
-      alert("Something went wrong, please try again later!");
-      console.log(err);
+      setIsProcessing(false);
+      alert("Something went wrong, please try again!");
+      // console.log(err);
     }
   }
 
@@ -150,7 +151,7 @@ function DonationForm() {
                     base: {
                       iconColor: "#c4f0ff",
                       color: "black",
-                      fontWeight: 600,
+                      fontWeight: 500,
                       fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
                       fontSize: "16px",
                       fontSmoothing: "antialiased",
