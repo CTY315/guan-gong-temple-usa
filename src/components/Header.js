@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div>
         <Navbar style={{ backgroundColor: "#cc7351" }} expand="lg">
-          <Navbar.Brand href="/">Guan Gong Temple</Navbar.Brand>
+          <Navbar.Brand href="/">Guan Gong Temple of USA</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
