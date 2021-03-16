@@ -11,7 +11,7 @@ function FrontPage() {
   return (
     <div>
       <br />
-      <h3>Donation to Guan Gong Temple USA</h3>
+      <h3>捐款 Donation to Guan Gong Temple USA</h3>
       <br />
       <Container>
         <Elements stripe={stripePromise}>
