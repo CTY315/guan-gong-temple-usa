@@ -26,7 +26,9 @@ app.use(express.json());
 
 //get the form data
 app.post("/donate", async (req, res) => {
+  console.log(req.body);
   const { amount, email } = req.body;
+
   console.log(email, "in express server");
   try {
     const paymentIntent = await Stripe.paymentIntents.create({
