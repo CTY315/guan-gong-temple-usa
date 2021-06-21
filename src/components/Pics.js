@@ -15,7 +15,7 @@ class Pics extends Component {
         <Container>
           <Row>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img
                   variant="top"
                   src="https://fastly.4sqi.net/img/general/600x600/79385836_AUfP-aCmUvZuAOZB7b8Sdifx_BA5nXk67eex-TQheXM.jpg"
@@ -24,32 +24,32 @@ class Pics extends Component {
             </Col>
 
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img variant="top" src={picTwo} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "18rem" }}>
+              <Card className="pic" style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={picThree} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img variant="top" src={picFour} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img variant="top" src={picFive} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img variant="top" src={picSix} />
               </Card>
             </Col>
             <Col style={{ padding: "20px" }}>
-              <Card style={{ width: "20rem" }}>
+              <Card className="pic" style={{ width: "20rem" }}>
                 <Card.Img variant="top" src={picSeven} />
               </Card>
             </Col>
