@@ -8,10 +8,10 @@ A Donation Website for a Temple​, which allows users to make an online charita
 
 ### `Preview`
 
-![](images/frontPageIMG.png)
-![](images/picsIMG.png)
-![](images/donationIMG.png)
-![](images/hoverIMG.png)
+![](src/images/frontPageIMG.png)
+![](src/images/picsIMG.png)
+![](src/images/donationIMG.png)
+![](src/images/hoverIMG.png)
 
 ### `Tech Stacks`
 
