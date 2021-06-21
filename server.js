@@ -37,7 +37,6 @@ app.post("/donate", async (req, res) => {
       receipt_email: email,
     });
 
-    // console.log(paymentIntent);
     res.status(200).send(paymentIntent.client_secret);
   } catch (err) {
     console.log(err.message);

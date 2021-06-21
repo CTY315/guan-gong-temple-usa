@@ -17,9 +17,8 @@ function DonationForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     setIsProcessing(true);
-    // console.log("elements:", elements);
     try {
-      // console.log("before axios.post");
+
       const paymentIntent = await axios.post(
         // "/donate",
         "http://localhost:5000/donate",
@@ -54,18 +53,15 @@ function DonationForm() {
       });
 
       if (error) {
-        // console.log("[error]", error);
         setIsProcessing(false);
         window.alert("Error:" + error.message);
       } else {
-        // console.log("[PaymentMethod]", paymentMethod);
         setIsProcessing(false);
         setName("");
         setPhone("");
         setEmail("");
         setAmount("");
         cardElement.clear();
-        // console.log("successfull donate");
         alert("Successful!Thank you.");
       }
 
