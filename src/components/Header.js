@@ -14,6 +14,7 @@ class Header extends Component {
             <Nav className="mr-auto">
               <Nav.Link href="/pics">Pictures 照片</Nav.Link>
               <Nav.Link href="/donation">Donation 捐款</Nav.Link>
+              <Nav.Link href="/contact">Contact Us 連絡我們</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
