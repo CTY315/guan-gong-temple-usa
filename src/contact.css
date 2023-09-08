@@ -1,12 +1,12 @@
 .contactCardsContainer {
-   display: flex;
-   flex-direction: row;
-   /* margin: auto; */
-   width: 100%;
-   height: 10rem;
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+  width: 100%;
+  height: 10rem;
 }
 
-.eachContactCard{
+.eachContactCard {
   width: 50%;
   height: 100rem;
 }

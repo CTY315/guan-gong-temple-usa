@@ -1,3 +1,5 @@
 .pic:hover {
+  z-index: 2;
+  position: relative;
   transform: scale(1.5);
 }

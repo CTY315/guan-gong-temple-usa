@@ -18,7 +18,6 @@ function DonationForm() {
     e.preventDefault();
     setIsProcessing(true);
     try {
-
       const paymentIntent = await axios.post(
         // "/donate",
         "http://localhost:5000/donate",
