@@ -11,6 +11,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 if (process.env.NODE_ENV === "production") {
+  // when in production, the cloud will referenceing a build file
+  // instead of client/build
   app.use(express.static("build"));
   const path = require("path");
   app.get("*", (req, res) => {
