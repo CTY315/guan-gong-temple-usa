@@ -24,11 +24,10 @@ function FrontPage() {
         <p style={{ padding: "0 5rem 2rem 5rem", textAlign: "left" }}>
           Thank you for your support to the Guan Gong Temple of USA. The
           donation transaction is securely completed by Stripe. We do not
-          collect any of your personal information. You will receive a recipe
-          for the donation in your email. The donation you made may be qualified
-          for federal tax deduction. If you are unsure, please try a small
-          amount to test it out first. Thank you again for your kind donation
-          and support.
+          collect any of your personal information. You will receive a receipt
+          for the donation in your email. Your donation may be qualified for a
+          federal tax deduction. If you are unsure, please try a small amount to
+          test it out first. Thank you again for your kind donation and support.
         </p>
         <Elements stripe={stripePromise}>
           <DonationForm />
