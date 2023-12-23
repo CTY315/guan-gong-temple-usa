@@ -53,7 +53,7 @@ class Contact extends Component {
                     <Card.Text>294 Broome St, New York, NY 10002</Card.Text>
 
                     <Card.Title>Hours 開放時間</Card.Title>
-                    <Card.Text>Monday to Friday 9am - 4pm</Card.Text>
+                    <Card.Text>Monday to Friday 8am - 5pm</Card.Text>
 
                     <Card.Title>Call Us 連絡電話</Card.Title>
                     <Card.Text>{phone}</Card.Text>
