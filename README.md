@@ -20,7 +20,7 @@ A Donation Website for a Temple​, which allows users to make an online charita
 - Stripe payment API
 - heroku deployment
 
-### `Setup and test`
+### Donation
 
-- Please make a donation to test the functionality of the website!
+- We appreciate your kind donations!
 - [https://www.guangongtempleusa.com/donation](https://www.guangongtempleusa.com/donation)
