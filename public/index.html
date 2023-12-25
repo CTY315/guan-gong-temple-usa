@@ -22,7 +22,16 @@
       name="description"
       content="Web site created using create-react-app"
     />
-
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        frame-src 'self' 'unsafe-inline' https://js.stripe.com/ https://www.google.com/ https://hooks.stripe.com/;
+        script-src 'self' 'unsafe-eval' 'unsafe-inline'  https://www.google-analytics.com/ https://tagmanager.google.com/ https://www.googletagmanager.com/ https://js.stripe.com/ https://maps.googleapis.com/;
+        style-src 'self' 'unsafe-inline' https://pro.fontawesome.com/ https://www.google-analytics.com https://tagmanager.google.com/ https://www.googletagmanager.com/ https://fonts.googleapis.com/ https://maxcdn.bootstrapcdn.com/;
+        font-src 'self' 'unsafe-inline' https://pro.fontawesome.com/ https://fonts.gstatic.com/ data:;
+        connect-src 'self' 'unsafe-inline' https://api.stripe.com https://maps.googleapis.com;
+      "
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="/manifest.json" />
     <link
