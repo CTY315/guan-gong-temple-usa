@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import FrontPage from "./components/FrontPage";
 import AboutUs from "./components/AboutUs";
 import ContactPage from "./components/ContactPage";
+import DonationLink from "./components/DonationLink";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/pics" component={Pics} />
           <Route exact path="/donation" component={FrontPage} />
           <Route exact path="/contact" component={ContactPage} />
+          <Route exact path="/links" component={DonationLink} />
         </Switch>
 
         <Footer />
