@@ -32,20 +32,92 @@ function FrontPage() {
         </p>
         <p>Please Select the amount you would like to donate.</p>
         <p>請選擇捐款的數目</p>
+
         <Button
           variant="warning"
-          href="https://donate.stripe.com/00g047gzx9JJc80aEJ"
+          href="https://donate.stripe.com/6oE9EH9751ddfkc4gk"
           target="_blank"
         >
-          $1
-        </Button>
-        <Button variant="warning" href="">
           $10
         </Button>
-        <Button variant="warning">$20</Button>
-        <Button variant="warning">$50</Button>
-        <Button variant="warning">$100</Button>
-        <Button variant="warning">$500</Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/fZe18b3ML1dd5JC7st"
+          target="_blank"
+        >
+          $20
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/14kbMPbfd7BB6NG4gm"
+          target="_blank"
+        >
+          $30
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/3cs18berpcVVgogaEH"
+          target="_blank"
+        >
+          $50
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/00g2cf2IHcVV1tmdQS"
+          target="_blank"
+        >
+          $100
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/8wMaILbfdf438VO28f"
+          target="_blank"
+        >
+          $500
+        </Button>
+        <br />
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/28o18bbfd4ppfkcfZ6"
+          target="_blank"
+        >
+          $18
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/aEU2cf0Az4ppdc45kt"
+          target="_blank"
+        >
+          $28
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/bIYdUX6YX3ll8VO00a"
+          target="_blank"
+        >
+          $68
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/6oE2cf4QP7BB1tmfZ9"
+          target="_blank"
+        >
+          $88
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/4gw7wzfvt8FF3Bu5kw"
+          target="_blank"
+        >
+          $188
+        </Button>
+        <Button
+          variant="warning"
+          href="https://donate.stripe.com/6oE4kn8319JJeg8fZb"
+          target="_blank"
+        >
+          $888
+        </Button>
       </Container>
       <br />
     </div>
